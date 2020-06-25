@@ -1,0 +1,23 @@
+import { createGlobalStyle } from "styled-components";
+import { normalize } from "styled-normalize";
+
+export const GlobalStyle = createGlobalStyle`
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,500,700&display=swap');
+
+  ${normalize};
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Monserrat", "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+`;
