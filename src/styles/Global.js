@@ -1,13 +1,14 @@
 import { createGlobalStyle } from "styled-components";
-import { normalize } from "styled-normalize";
+import { normalize } from "polished";
 
 export const GlobalStyle = createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,500,700&display=swap');
 
-  ${normalize};
+  ${normalize()};
   html {
     box-sizing: border-box;
+    font-size: 62.5%
   }
 
   *, *:before, *:after {

@@ -1,2 +1,2 @@
-export const colorHeader = "#546E7A";
-export const colorHighlightPrimary = "#FF5722";
+export const colorPrimary = "#303F9F";
+export const colorSecondary = "#f4511e";
