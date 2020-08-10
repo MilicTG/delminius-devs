@@ -2,4 +2,4 @@ export * from "./NavBar";
 export * from "./Header";
 export * from "./Button";
 export * from "./TitleSection";
-export * from "./ServicesCard";
+export * from "./ServicesSection";

@@ -63,6 +63,6 @@ const HeaderDesc = styled.h3`
 `;
 
 const HeaderPhoneImage = styled.img`
-  max-height: 70rem;
-  padding-right: 7rem;
+  max-height: 55rem;
+  padding: 0 5rem 0 7rem;
 `;
