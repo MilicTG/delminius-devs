@@ -9,8 +9,11 @@ export const Header = () => {
     <HeaderWrapper>
       <HeaderElements>
         <HeaderTextAndButtonWrapper>
-          <HeaderTitle>{`Modern App development`}</HeaderTitle>
-          <HeaderDesc>Bring your Android App to next level</HeaderDesc>
+          <HeaderTitle>{`Bring your App to next level`}</HeaderTitle>
+          <HeaderDesc>
+            DelminiusDevs is leading custom mobile app development company
+            offering custom mobile app development on Android smartphones.
+          </HeaderDesc>
           <Button>Contact Us</Button>
         </HeaderTextAndButtonWrapper>
         <HeaderPhoneImage src={imgPhone} />
@@ -37,7 +40,6 @@ const HeaderElements = styled.div`
 const HeaderTextAndButtonWrapper = styled.div`
   height: 50%;
   display: flex;
-
   justify-content: space-evenly;
   flex-flow: column;
 `;
@@ -51,6 +53,7 @@ const HeaderTitle = styled.h1`
 `;
 
 const HeaderDesc = styled.h3`
+  max-width: 70%;
   font-size: 2.4rem;
   font-weight: 400;
   margin: 0 0 7rem 0;
@@ -60,6 +63,6 @@ const HeaderDesc = styled.h3`
 `;
 
 const HeaderPhoneImage = styled.img`
-  max-height: 55rem;
+  max-height: 70rem;
   padding-right: 7rem;
 `;
