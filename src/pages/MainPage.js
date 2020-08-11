@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import { Header, TitleSection, ServicesSection } from "../components";
+import {
+  Header,
+  TitleSection,
+  ServicesSection,
+  WhyMobile,
+} from "../components";
 
 class MainPage extends Component {
   render() {
@@ -8,6 +13,7 @@ class MainPage extends Component {
         <Header />
         <TitleSection title="Our services" />
         <ServicesSection />
+        <WhyMobile />
       </>
     );
   }

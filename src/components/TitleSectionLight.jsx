@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { colorSecondary, container } from "../styles";
 
-export const TitleSection = (props) => {
+export const TitleSectionLight = (props) => {
   return (
     <TitleSectionContainer>
       <TitleSectionDecoration />
@@ -22,7 +22,7 @@ const TitleSectionContainer = styled.div`
   > h3 {
     font-size: 5rem;
     margin: 1rem 0;
-    color: #595959;
+    color: #ffffff;
   }
 `;
 
