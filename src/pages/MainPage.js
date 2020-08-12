@@ -6,6 +6,8 @@ import {
   WhyMobile,
 } from "../components";
 
+import { Portfolio, AboutUs } from "../sections";
+
 class MainPage extends Component {
   render() {
     return (
@@ -14,6 +16,8 @@ class MainPage extends Component {
         <TitleSection title="Our services" />
         <ServicesSection />
         <WhyMobile />
+        <Portfolio />
+        <AboutUs />
       </>
     );
   }
