@@ -1,12 +1,15 @@
 import React, { Component } from "react";
+
 import {
   Header,
-  TitleSection,
-  ServicesSection,
+  Portfolio,
+  AboutUs,
   WhyMobile,
-} from "../components";
-
-import { Portfolio, AboutUs } from "../sections";
+  ServicesSection,
+  TitleSection,
+  Contact,
+  Footer,
+} from "../sections";
 
 class MainPage extends Component {
   render() {
@@ -18,6 +21,8 @@ class MainPage extends Component {
         <WhyMobile />
         <Portfolio />
         <AboutUs />
+        <Contact />
+        <Footer />
       </>
     );
   }

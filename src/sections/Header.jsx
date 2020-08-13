@@ -26,6 +26,7 @@ export const Header = () => {
 const HeaderWrapper = styled.header`
   width: 100%;
   height: 90vh;
+  max-height: 1080px;
   background: ${colorPrimary};
 `;
 
