@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../assets/logo-light.svg";
+import { Logo } from "../components";
 import { colorPrimary, container } from "../styles";
 
 export const NavBar = () => {
@@ -35,13 +35,6 @@ const NavElement = styled.div`
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-`;
-
-const Logo = styled.svg`
-  background-image: url(${logo}), none;
-  height: 60px;
-  background-repeat: no-repeat;
-  background-size: contain;
 `;
 
 const NavLinks = styled.ul`

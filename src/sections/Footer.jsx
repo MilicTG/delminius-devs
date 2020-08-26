@@ -14,6 +14,17 @@ export const Footer = () => {
         <li>Blog</li>
         <li>Contact</li>
       </NavLinks>
+      <FooterContact>
+        <ContactInfoDesc>
+          <strong>Contact</strong>
+          <p>
+            <strong>Phone No:</strong> +0038763661215
+          </p>
+          <p>
+            <strong>E-mail:</strong> deminiusdevs@gmail.com
+          </p>
+        </ContactInfoDesc>
+      </FooterContact>
     </Container>
   );
 };
@@ -22,6 +33,7 @@ const Container = styled.section`
   ${container}
   background-color: ${colorPrimary};
   display: flex;
+  justify-content: space-evenly;
   flex-flow: row;
 `;
 
@@ -35,17 +47,31 @@ const Logo = styled.svg`
 
 const NavLinks = styled.ul`
   list-style: column;
-  margin: 0;
   padding: 3rem 0;
   display: flex;
   flex-flow: column;
   border-radius: 4px;
   overflow: hidden;
   > li {
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     display: flex;
     align-items: center;
     color: #fff;
     font-size: 2rem;
   }
+`;
+
+const FooterContact = styled.div`
+  display: inherit;
+  flex-direction: column;
+  padding: 3rem 0;
+`;
+
+const ContactInfoDesc = styled.p`
+  text-align: start;
+  font-size: 1.8rem;
+  margin-top: 0;
+  color: white;
+
+  margin: 0 0 1rem 0;
 `;
