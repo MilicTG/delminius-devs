@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { colorPrimary, container } from "../styles";
 import imgPhone from "../assets/img-phone.png";
-import { Button } from "../components";
+import { Button } from ".";
 
 export const Header = () => {
   return (

@@ -2,27 +2,27 @@ import React, { Component } from "react";
 
 import {
   Header,
+  TitleSection,
+  ServicesSection,
+  WhyMobile,
   Portfolio,
   AboutUs,
-  WhyMobile,
-  ServicesSection,
-  TitleSection,
   Contact,
   Footer,
-} from "../sections";
+} from "../components";
 
 class MainPage extends Component {
   render() {
     return (
       <>
-        <Header />
+        {/* <Header />
         <TitleSection title="Our services" />
         <ServicesSection />
         <WhyMobile />
         <Portfolio />
         <AboutUs />
         <Contact />
-        <Footer />
+        <Footer /> */}
       </>
     );
   }

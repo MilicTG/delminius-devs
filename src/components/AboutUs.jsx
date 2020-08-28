@@ -6,7 +6,7 @@ import imgSpongebob from "../assets/spongbob.png";
 import imgMorty from "../assets/morty.png";
 import imgPhone from "../assets/img-phone-three.png";
 
-import { TitleSectionLight } from "../sections";
+import { TitleSectionLight } from "../components";
 
 export const AboutUs = () => {
   return (

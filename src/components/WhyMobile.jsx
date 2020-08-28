@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { colorPrimary, container } from "../styles";
 import imgPhone from "../assets/img-phone-two.png";
 
-import { TitleSectionLight } from "./TitleSectionLight";
+import { TitleSectionLight } from "../components";
 
 export const WhyMobile = () => {
   return (

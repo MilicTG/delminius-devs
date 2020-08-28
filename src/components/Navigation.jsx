@@ -1,13 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import { Sling as Hamburger } from "hamburger-react";
 import { Logo } from "../components";
 import { colorPrimary, container } from "../styles";
+import { above } from "../util";
 
-export const NavBar = () => {
+export const Navigation = () => {
   return (
     <NavWrapper>
       <NavElement>
         <Logo />
+        <HamburgerWrapper>
+          <Hamburger
+            rounded
+            duration={0.8}
+            color="#fff"
+            className="hamburger-menu"
+          />
+        </HamburgerWrapper>
         <NavLinks>
           <li>Home</li>
           <li>About Us</li>
@@ -37,6 +47,15 @@ const NavElement = styled.div`
   align-items: center;
 `;
 
+const HamburgerWrapper = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
+  ${above.large`
+    display: none;
+  `}
+`;
+
 const NavLinks = styled.ul`
   list-style: none;
   margin: 0;
@@ -44,6 +63,10 @@ const NavLinks = styled.ul`
   display: flex;
   border-radius: 4px;
   overflow: hidden;
+  display: none;
+  ${above.large`
+    display: flex;
+  `}
   > li {
     padding-left: 5rem;
     display: flex;

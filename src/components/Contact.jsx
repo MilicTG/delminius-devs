@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { colorPrimary, colorFontPrimary, container } from "../styles";
 import imgPhone from "../assets/img-phone-four.png";
 
-import { TitleSection } from "./TitleSection";
+import { TitleSection } from "../components";
 
 export const Contact = () => {
   return (

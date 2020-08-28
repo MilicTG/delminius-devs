@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { colorFontPrimary, container } from "../styles";
 
-import { TitleSection } from "../sections";
+import { TitleSection } from "../components";
 
 export const Portfolio = () => {
   return (

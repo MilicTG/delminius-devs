@@ -5,33 +5,39 @@ import logo from "../assets/logo-light.svg";
 
 export const Footer = () => {
   return (
-    <Container>
-      <Logo />
-      <NavLinks>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Work</li>
-        <li>Blog</li>
-        <li>Contact</li>
-      </NavLinks>
-      <FooterContact>
-        <ContactInfoDesc>
-          <strong>Contact</strong>
-          <p>
-            <strong>Phone No:</strong> +0038763661215
-          </p>
-          <p>
-            <strong>E-mail:</strong> deminiusdevs@gmail.com
-          </p>
-        </ContactInfoDesc>
-      </FooterContact>
-    </Container>
+    <FooterWrapper>
+      <Container>
+        <Logo />
+        <NavLinks>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Work</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </NavLinks>
+        <FooterContact>
+          <ContactInfoDesc>
+            <strong>Contact</strong>
+            <p>
+              <strong>Phone No:</strong> +0038763661215
+            </p>
+            <p>
+              <strong>E-mail:</strong> deminiusdevs@gmail.com
+            </p>
+          </ContactInfoDesc>
+        </FooterContact>
+      </Container>
+    </FooterWrapper>
   );
 };
 
+const FooterWrapper = styled.section`
+  background-color: ${colorPrimary};
+  width: 100%;
+`;
+
 const Container = styled.section`
   ${container}
-  background-color: ${colorPrimary};
   display: flex;
   justify-content: space-evenly;
   flex-flow: row;
