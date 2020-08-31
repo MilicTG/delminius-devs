@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { colorFontPrimary, container } from "../styles";
+import { above } from "../util";
 
 import { TitleSection } from "../components";
 
@@ -22,7 +23,10 @@ const TempText = styled.h3`
   color: ${colorFontPrimary};
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-self: center;
   font-size: 3rem;
   font-weight: 700;
+  ${above.large`
+    align-items: start;
+  `}
 `;

@@ -1,4 +1,4 @@
-export * from "./Navigation";
+export * from "./SideDrawer";
 export * from "./Header";
 export * from "./Logo";
 export * from "./Button";

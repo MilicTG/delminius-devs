@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { GlobalStyle } from "./styles";
-import { Navigation } from "./components";
+import Navigation from "./components/Navigation";
 import Main from "./pages/MainPage";
 
 function App() {

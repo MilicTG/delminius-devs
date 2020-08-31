@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { colorPrimary, container } from "../styles";
+import { above } from "../util";
 import imgPhone from "../assets/img-phone-two.png";
 
 import { TitleSectionLight } from "../components";
@@ -46,16 +47,28 @@ const Container = styled.section`
 const WhyWrapper = styled.div`
   ${container}
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   justify-content: space-evenly;
+  align-items: center;
+  ${above.med`
+    flex-flow: row;
+  `}
 `;
 
-const WhyText = styled.p`
+const WhyText = styled.div`
   color: #fff;
   font-size: 2rem;
+  padding: 0;
+  text-align: center;
+  ${above.med`
+    text-align: start;
+  `}
 `;
 
 const WhyImage = styled.img`
-  height: 40rem;
-  padding-left: 4rem;
+  height: 20rem;
+  ${above.large`
+    height: 30rem;
+    padding-left: 4rem;
+  `}
 `;

@@ -5,6 +5,7 @@ import imgHomer from "../assets/homer.png";
 import imgSpongebob from "../assets/spongbob.png";
 import imgMorty from "../assets/morty.png";
 import imgPhone from "../assets/img-phone-three.png";
+import { above } from "../util";
 
 import { TitleSectionLight } from "../components";
 
@@ -71,9 +72,12 @@ const Wrapper = styled.div`
 
 const AboutUsContentWrapper = styled.div`
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   justify-content: space-between;
   align-items: center;
+  ${above.med`
+    flex-flow: row;
+  `}
 `;
 
 const AboutUsText = styled.p`
@@ -83,8 +87,11 @@ const AboutUsText = styled.p`
 `;
 
 const AboutUsImg = styled.img`
-  height: 20rem;
-  padding-left: 4rem;
+  height: 10rem;
+  ${above.med`
+    height: 20rem;
+    padding-left: 4rem;  
+  `}
 `;
 
 const TeamTitle = styled.h4`
@@ -96,15 +103,22 @@ const TeamTitle = styled.h4`
 
 const HeadImageWrapper = styled.div`
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   justify-content: space-evenly;
+  align-items: center;
+  ${above.med`
+    flex-flow: row;
+  `}
 `;
 
 const HeadInfoWrapper = styled.div`
-  width: 20%;
+  width: 100%;
   display: inherit;
   flex-flow: column;
   justify-content: space-evenly;
+  padding-bottom: 3rem;
+  ${above.med`
+    width: 20%;  `};
 `;
 
 const HeadImage = styled.img`
@@ -117,11 +131,15 @@ const HeadTitle = styled.h5`
   font-size: 2.2rem;
   text-align: center;
   color: white;
-  margin-bottom: 0.1rem;
+  margin: 0.7rem auto;
+  ${above.med`
+    flex-flow: row;
+  `}
 `;
 
 const HeadDesc = styled.p`
   color: white;
   font-size: 1.6rem;
   text-align: center;
+  margin: 0.7rem auto;
 `;

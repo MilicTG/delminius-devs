@@ -1,0 +1,9 @@
+export const fontSize5x = "5.5rem";
+export const fontSize4x = "4.4rem";
+export const fontSize3x = "3.5rem";
+export const fontSize2x = "2.8rem";
+export const fontSize1x = "2.2rem";
+export const fontSize = "1.8rem";
+export const fontSize1s = "1.4rem";
+export const fontSize2s = "1.2rem";
+export const fontSize3s = "0.9rem";

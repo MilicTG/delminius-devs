@@ -1,47 +1,84 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 import { Sling as Hamburger } from "hamburger-react";
-import { Logo } from "../components";
+import { Logo, SideDrawer } from "../components";
 import { colorPrimary, container } from "../styles";
 import { above } from "../util";
 
-export const Navigation = () => {
-  return (
-    <NavWrapper>
-      <NavElement>
-        <Logo />
-        <HamburgerWrapper>
-          <Hamburger
-            rounded
-            duration={0.8}
-            color="#fff"
-            className="hamburger-menu"
-          />
-        </HamburgerWrapper>
-        <NavLinks>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Work</li>
-          <li>Blog</li>
-          <li>Contact</li>
-        </NavLinks>
-      </NavElement>
-    </NavWrapper>
-  );
-};
+class Navigation extends Component {
+  constructor() {
+    super();
+    this.state = {
+      sideDrawerOpen: false,
+      bodyScrollLock: false,
+    };
+  }
+
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return {
+        sideDrawerOpen: !prevState.sideDrawerOpen,
+        bodyScrollLock: !prevState.bodyScrollLock,
+      };
+    });
+    this.onScrollBodyLock();
+  };
+
+  onScrollBodyLock = () => {
+    !this.state.bodyScrollLock
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "unset");
+  };
+
+  render() {
+    return (
+      <>
+        <NavWrapper>
+          <NavElement>
+            <Logo />
+            <HamburgerWrapper>
+              <Hamburger
+                rounded
+                duration={0.8}
+                color="#fff"
+                className="hamburger-menu"
+                onToggle={this.drawerToggleClickHandler}
+              />
+            </HamburgerWrapper>
+            <NavLinks>
+              <li>Services</li>
+              <li>Portfolio</li>
+              <li>About Us</li>
+              <li>Contact</li>
+            </NavLinks>
+          </NavElement>
+        </NavWrapper>
+        <SideDrawer navBarState={this.state.sideDrawerOpen} />
+      </>
+    );
+  }
+}
+
+export default Navigation;
 
 //styles
 const NavWrapper = styled.nav`
-  height: 9rem;
+  height: 7rem;
+  position: relative;
+  z-index: 10;
   background: ${colorPrimary};
   display: flex;
   align-items: center;
+  ${above.large`
+    height: 9rem;  
+  `}
 `;
 
 const NavElement = styled.div`
   height: 100%;
   display: flex;
   ${container}
+  border-bottom: solid white 2px;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;

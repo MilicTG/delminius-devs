@@ -1,9 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { colorFontPrimary, colorPrimary, container } from "../styles";
+import {
+  colorFontPrimary,
+  colorPrimary,
+  container,
+  fontSize1x,
+  fontSize1s,
+} from "../styles";
 import { Android } from "@styled-icons/fa-brands/Android";
 import { Pen } from "@styled-icons/boxicons-solid/Pen";
 import { GearFill } from "@styled-icons/bootstrap/GearFill";
+import { above } from "../util";
 
 export const ServicesSection = (props) => {
   return (
@@ -48,20 +55,27 @@ export const ServicesSection = (props) => {
 const Container = styled.section`
   ${container}
   display: flex;
-  flex-flow: row;
-  padding-bottom: 5rem;
+  flex-flow: column;
+  padding-bottom: 3rem;
+  ${above.med`
+     flex-flow: row;
+     padding-bottom: 5rem;
+  `}
 `;
 
 const Wrapper = styled.div`
   height: 100%;
-  padding: 0 3rem;
+  padding: 2rem 3rem;
+  ${above.med`
+    padding: 0 3rem;
+  `}
 `;
 
 const Icon = styled.div`
   padding: 0;
   margin: 0 auto;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   color: ${colorPrimary};
   svg {
     padding: 0;
@@ -71,13 +85,18 @@ const Icon = styled.div`
 
 const Title = styled.h3`
   text-align: center;
-  font-size: 2.4rem;
+  font-size: ${fontSize1x};
   font-weight: 600;
-  padding: 0.3rem 0;
+  margin: 0 auto;
+  padding-top: 1rem;
   color: ${colorFontPrimary};
 `;
 
 const Desc = styled.p`
-  font-size: 1.6rem;
+  font-size: ${fontSize1s};
   color: ${colorFontPrimary};
+  text-align: center;
+  ${above.med`
+    text-align: start;
+  `}
 `;

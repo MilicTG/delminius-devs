@@ -15,13 +15,13 @@ class MainPage extends Component {
   render() {
     return (
       <>
-        {/* <Header />
+        <Header />
         <TitleSection title="Our services" />
         <ServicesSection />
         <WhyMobile />
         <Portfolio />
         <AboutUs />
-        <Contact />
+        {/* <Contact />
         <Footer /> */}
       </>
     );
