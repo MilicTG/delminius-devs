@@ -78,7 +78,6 @@ const NavElement = styled.div`
   height: 100%;
   display: flex;
   ${container}
-  border-bottom: solid white 2px;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;

@@ -7,7 +7,7 @@ import {
   fontSize4x,
   fontSize3x,
 } from "../styles";
-import imgPhone from "../assets/img-phone.png";
+import imgPhone from "../assets/img-code-pixel.png";
 import { Button } from ".";
 import { above } from "../util";
 
@@ -34,17 +34,24 @@ export const Header = () => {
 //styles
 const HeaderWrapper = styled.header`
   width: 100%;
-  height: 90vh;
-  max-height: 1080px;
   background: ${colorPrimary};
+  padding-bottom: 5rem;
+  ${above.large`
+    height: 90vh;
+    max-height: 1080px;
+  `}
 `;
 
 const HeaderElements = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  flex-flow: column-reverse;
   justify-content: space-between;
   ${container}
+  ${above.large`
+    flex-flow: row;
+  `}
 `;
 
 const HeaderTextAndButtonWrapper = styled.div`
@@ -91,10 +98,9 @@ const HeaderDesc = styled.h3`
 `;
 
 const HeaderPhoneImage = styled.img`
-  max-height: 80%;
-  padding: 1rem 5rem 1rem 7rem;
-  display: none;
+  max-height: 20rem;
+  padding: 3rem 0 0 0;
   ${above.large`
-    display: block;
+   max-height: 80%;
   `}
 `;
