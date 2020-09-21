@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import {
   colorPrimary,
+  colorSecondary,
+  colorWhite,
   container,
   fontSize2s,
+  fontSize0,
   shadow,
-  colorWhite,
   above,
   below,
 } from "../../styles";
@@ -41,6 +43,7 @@ export const NavbarLogo = styled(Link)`
 export const NavbarIcon = styled.svg`
   background-image: url(${logoSVG}), none;
   height: 4rem;
+  width: 10rem;
   background-repeat: no-repeat;
   background-size: contain;
   ${above.large`
@@ -53,7 +56,7 @@ export const NavbarHamburgerMenuWrapper = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
-  ${above.large`
+  ${above.med`
     display: none;
   `}
 `;
@@ -63,13 +66,74 @@ export const NavbarNavigationMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  ${above.med`
+  margin: 0;
+  padding: 0;
+  ${below.med`
     display: flex;
     flex-direction:column;
     width: 100%;
     height: 90vh;
     position: absolute;
     top: 8rem;
-    left: ${({ click }) => (click ? 0 : "-100%")}
+    left: ${({ click }) => (click ? 0 : "-100%")};
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: ${colorPrimary}
   `}
+`;
+
+export const NavbarNavigationItem = styled.li`
+  height: 8rem;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid ${colorSecondary};
+  }
+  ${below.med`
+    width: 100%;
+    &:hover{
+      border: none;
+    }
+`}
+`;
+
+export const NavbarNavigationLink = styled(Link)`
+  color: ${colorWhite};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  font-size: ${fontSize0};
+  &:hover {
+    color: ${colorSecondary};
+    transition: all 0.3s ease;
+  }
+  ${below.med`
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  `};
+`;
+
+export const NavbarNavigationItemButton = styled.li`
+  ${below.med`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+`}
+`;
+
+export const NavigationButtonLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
 `;
