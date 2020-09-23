@@ -1,5 +1,5 @@
 export const fontSize5x = "5.5rem";
-export const fontSize4x = "4.4rem";
+export const fontSize4x = "4.8rem";
 export const fontSize3x = "3.5rem";
 export const fontSize2x = "2.8rem";
 export const fontSize1x = "2.2rem";

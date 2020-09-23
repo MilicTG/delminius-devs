@@ -6,7 +6,6 @@ import {
   container,
   fontSize2s,
   fontSize0,
-  shadow,
   above,
   below,
 } from "../../styles";
@@ -22,7 +21,6 @@ export const NavbarWrapper = styled.nav`
   font-size: ${fontSize2s};
   position: sticky;
   z-index: 999;
-  ${shadow}
 `;
 
 export const NavbarContainer = styled.div`
