@@ -12,6 +12,10 @@ export const container = () => css`
   `}
 `;
 
-export const shadow = () => css`
-  box-shadow: 10px 10px 34px -15px rgba(0, 0, 0, 0.56);
+export const orangeShadow = () => css`
+  box-shadow: 6px 6px 15px -2px rgba(244, 81, 30, 0.75);
+`;
+
+export const blackShadow = () => css`
+  box-shadow: 6px 6px 15px -2px rgba(0, 0, 0, 0.75);
 `;

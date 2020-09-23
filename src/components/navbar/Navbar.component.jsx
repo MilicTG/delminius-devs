@@ -61,19 +61,9 @@ const Navbar = () => {
             <NavbarNavigationItem>
               <NavbarNavigationLink to="/">Portfolio</NavbarNavigationLink>
             </NavbarNavigationItem>
-            <NavbarNavigationItemButton>
-              {button ? (
-                <NavigationButtonLink to="/">
-                  <Button secondary>Contact Us</Button>
-                </NavigationButtonLink>
-              ) : (
-                <NavigationButtonLink to="/">
-                  <Button onClick={closeMobileMenu} fontBig secondary>
-                    Contact Us
-                  </Button>
-                </NavigationButtonLink>
-              )}
-            </NavbarNavigationItemButton>
+            <NavbarNavigationItem>
+              <NavbarNavigationLink to="/">About Us</NavbarNavigationLink>
+            </NavbarNavigationItem>
           </NavbarNavigationMenu>
         </NavbarContainer>
       </NavbarWrapper>

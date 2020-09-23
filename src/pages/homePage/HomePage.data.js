@@ -4,7 +4,7 @@ export const homeObjectOne = {
   imgStart: "",
   lightTopLine: true,
   lightTextDesc: true,
-  buttonLabel: "Our work",
+  buttonLabel: "Contact Us",
   description:
     "DelminiusDevs is leading custom mobile app development company offering custom mobile app development on Android smartphones.",
   headline: "Bring your App to next level",
@@ -12,5 +12,5 @@ export const homeObjectOne = {
   topLine: "App development agency",
   start: false,
   alt: "Image",
-  src: require("../../assets/svgDev.svg"),
+  src: require("../../assets/svgHeadDev.svg"),
 };

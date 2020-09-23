@@ -12,7 +12,7 @@ import {
 
 export const InfoSectionWrapper = styled.div`
   color: ${colorWhite};
-  padding: 16rem 0;
+  padding: 10rem 0;
   background: ${({ lightBg }) => (lightBg ? colorWhite : colorPrimary)};
 `;
 
@@ -82,12 +82,19 @@ export const ImageWrapper = styled.div`
   max-width: 55.5rem;
   display: flex;
   justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
+  background-position: center center;
+  background-repeat: no-repeat;
+  ${below.small`
+    width: 90%;
+  `}
 `;
 
 export const Image = styled.img`
   padding-right: 0;
   border: 0;
-  vertical-align: middle;
-  display: inline-block;
-  max-height: 50rem;
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
 `;

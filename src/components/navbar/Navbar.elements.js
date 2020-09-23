@@ -20,6 +20,7 @@ export const NavbarWrapper = styled.nav`
   align-items: center;
   font-size: ${fontSize2s};
   position: sticky;
+  top: 0;
   z-index: 999;
 `;
 
