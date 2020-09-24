@@ -6,7 +6,8 @@ import {
   fontSize1x,
   fontSize0,
   below,
-  orangeShadow,
+  cardShadow,
+  cardShadowHover,
 } from "../../styles";
 
 export const ButtonWrapper = styled.button`
@@ -19,11 +20,12 @@ export const ButtonWrapper = styled.button`
   outline: none;
   border: none;
   cursor: pointer;
-  ${orangeShadow}
+  ${cardShadow}
   &:hover {
     transition: all 0.3s ease-out;
     background: ${colorWhite};
     background: ${({ primary }) => (primary ? colorSecondary : "#F4623A")};
+    ${cardShadowHover}
   }
   ${below.med`
       width: 100%;

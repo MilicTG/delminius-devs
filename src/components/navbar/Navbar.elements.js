@@ -4,6 +4,7 @@ import {
   colorSecondary,
   colorWhite,
   container,
+  blackShadow,
   fontSize2s,
   fontSize0,
   above,
@@ -22,6 +23,7 @@ export const NavbarWrapper = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
+  ${blackShadow}
 `;
 
 export const NavbarContainer = styled.div`
@@ -45,7 +47,7 @@ export const NavbarIcon = styled.svg`
   width: 10rem;
   background-repeat: no-repeat;
   background-size: contain;
-  ${above.large`
+  ${above.big`
     height: 5rem;  
   `}
 `;
@@ -55,7 +57,7 @@ export const NavbarHamburgerMenuWrapper = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
-  ${above.med`
+  ${above.large`
     display: none;
   `}
 `;

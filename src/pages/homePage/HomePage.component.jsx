@@ -1,12 +1,13 @@
 import React from "react";
-import { homeObjectOne } from "./HomePage.data";
-import { InfoSection, Services } from "../../components";
+import { homeObjectOne, homeObjTwo, homeObjThree } from "./HomePage.data";
+import { InfoSection, Titlebar, Services } from "../../components";
 
 const HomePage = () => {
   return (
     <>
       <InfoSection {...homeObjectOne} />
-      <Services />
+      <Titlebar {...homeObjTwo} />
+      <Services {...homeObjThree} />
     </>
   );
 };

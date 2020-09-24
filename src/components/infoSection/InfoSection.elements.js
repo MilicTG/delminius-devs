@@ -94,6 +94,7 @@ export const Image = styled.img`
   border: 0;
   display: block;
   width: 90%;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;

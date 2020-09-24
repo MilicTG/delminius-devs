@@ -14,3 +14,26 @@ export const homeObjectOne = {
   alt: "Image",
   src: require("../../assets/svgHeadDev.svg"),
 };
+
+export const homeObjTwo = {
+  title: "Our Services",
+  backgroundPrimary: false,
+  fontColor: true,
+};
+
+export const homeObjThree = {
+  cardTitleOne: "Create a Android app",
+  cardTitleTwo: "Modern UI/UX design",
+  cardTitleThree: "Launch and maintenance",
+
+  cardTextOne:
+    " In the modern world having just a website is not enough. We pride ourselves to deliver high quality android apps, based on modern and stable architecture.",
+  cardTextTwo:
+    " In the modern world having just a website is not enough. We pride ourselves to deliver high quality android apps, based on modern and stable architecture.",
+  cardTextThree:
+    " In the modern world having just a website is not enough. We pride ourselves to deliver high quality android apps, based on modern and stable architecture.",
+};
+
+export const homeObjFour = {};
+
+export const homeObjFive = {};

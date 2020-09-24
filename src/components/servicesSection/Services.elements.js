@@ -1,17 +1,19 @@
 import styled from "styled-components";
 import {
   colorPrimary,
-  colorSecondary,
   colorWhite,
+  colorFontPrimary,
   container,
-  fontSize4x,
+  fontSize2x,
   fontSize0,
+  cardShadow,
+  cardShadowHover,
   above,
   below,
 } from "../../styles";
 
 export const ServicesWrapper = styled.div`
-  padding: 10rem 0 16rem;
+  padding: 5rem 0 10rem 0;
   display: flex;
   justify-content: center;
   background: ${colorWhite};
@@ -19,16 +21,49 @@ export const ServicesWrapper = styled.div`
 
 export const ServicesContainer = styled.div`
   ${container}
-`;
-
-export const ServicesHeading = styled.h1`
-  color: ${colorSecondary};
-  font-size: ${fontSize4x};
-  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
 `;
 
 export const ServicesCardWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  grid-template-columns: 1fr;
+  ${above.med`
+    grid-template-columns: 1fr 1fr 1fr;
+  `}
+`;
+
+export const CardContainer = styled.div`
+  border-radius: 10px;
+  padding: 2rem;
+  min-height: 35rem;
+  ${cardShadow}
+  &:hover {
+    transition: all 0.3s ease-out;
+    ${cardShadowHover}
+  }
+`;
+
+export const CardIconHolder = styled.div`
+  padding: 0;
+  margin: 0 auto;
+  width: 7rem;
+  height: 7rem;
+  color: ${colorPrimary};
+  svg {
+    padding: 0;
+    margin: 0 auto;
+  }
+`;
+
+export const CardTitle = styled.h3`
+  font-size: ${fontSize2x};
+  color: ${colorFontPrimary};
+`;
+
+export const CardText = styled.p`
+  font-size: ${fontSize0};
+  color: ${colorFontPrimary};
 `;

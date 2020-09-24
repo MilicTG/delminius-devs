@@ -62,6 +62,9 @@ const Navbar = () => {
               <NavbarNavigationLink to="/">Portfolio</NavbarNavigationLink>
             </NavbarNavigationItem>
             <NavbarNavigationItem>
+              <NavbarNavigationLink to="/">Contact</NavbarNavigationLink>
+            </NavbarNavigationItem>
+            <NavbarNavigationItem>
               <NavbarNavigationLink to="/">About Us</NavbarNavigationLink>
             </NavbarNavigationItem>
           </NavbarNavigationMenu>
