@@ -5,16 +5,14 @@ import {
   colorWhite,
   container,
   fontSize3x,
-  fontSize0,
   above,
-  below,
 } from "../../styles";
 
 export const TitlebarWrapper = styled.div`
   width: 100%;
   background: ${({ backgroundPrimary }) =>
     backgroundPrimary ? colorPrimary : colorWhite};
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
 `;
 
 export const TitlebarContainer = styled.div`

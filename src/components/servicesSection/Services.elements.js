@@ -9,11 +9,10 @@ import {
   cardShadow,
   cardShadowHover,
   above,
-  below,
 } from "../../styles";
 
 export const ServicesWrapper = styled.div`
-  padding: 5rem 0 10rem 0;
+  padding: 7rem 0 12rem 0;
   display: flex;
   justify-content: center;
   background: ${colorWhite};
@@ -37,8 +36,8 @@ export const ServicesCardWrapper = styled.div`
 
 export const CardContainer = styled.div`
   border-radius: 10px;
-  padding: 2rem;
-  min-height: 35rem;
+  padding: 5rem 2rem;
+  min-height: 40rem;
   ${cardShadow}
   &:hover {
     transition: all 0.3s ease-out;
