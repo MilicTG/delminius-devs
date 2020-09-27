@@ -7,6 +7,7 @@ import {
   homeObjFive,
   homeObjSix,
   homeObjSeven,
+  homeObjEight,
 } from "./HomePage.data";
 import {
   InfoSection,
@@ -26,7 +27,9 @@ const HomePage = () => {
       <InfoSection {...homeObjFive} />
       <Titlebar {...homeObjSix} />
       <Portfolio />
+      <Titlebar {...homeObjSeven} />
       <Contact />
+      <InfoSection {...homeObjEight} />
     </>
   );
 };

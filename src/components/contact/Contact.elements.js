@@ -5,8 +5,9 @@ import {
   colorWhite,
   container,
   blackShadow,
-  fontSize2s,
   fontSize0,
+  fontSize1x,
+  fontSize1s,
   above,
   below,
 } from "../../styles";
@@ -15,38 +16,78 @@ export const ContactWrapper = styled.section`
   padding: 10rem 0;
 `;
 export const ContactContainer = styled.div`
+  ${container}
   display: flex;
   justify-content: center;
+  flex-flow: row;
   align-items: center;
+  ${below.small`
+    flex-flow: column;
+  `}
 `;
-export const ContactFormsContainer = styled.div``;
+export const ContactFormsContainer = styled.div`
+  width: 100%;
+  max-width: 54rem;
+`;
 
 export const Form = styled.form`
-  width: 300px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 `;
 
 export const Input = styled.input`
-  width: 300px;
-  height: 35px;
+  width: 100%;
+  height: 4.5rem;
+  margin: 1rem 0;
+  padding: 0 2rem;
+  border-radius: 10px;
+  font-size: ${fontSize0};
+  color: "#4d4d4d";
   border: 1px solid #ccc;
   background-color: #fff;
 `;
 
-// Text
-
-export const Title = styled.h1`
-  font-weight: 600;
-  color: #4d4d4d;
-  font-size: 2.2em;
+export const TextArea = styled.textarea`
+  width: 100%;
+  height: 10rem;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: ${fontSize0};
+  color: "#4d4d4d";
+  border: 1px solid #ccc;
+  background-color: #fff;
 `;
 
-export const Title2 = styled.h2`
-  font-weight: 300;
+export const Image = styled.img`
+  padding-right: 0;
+  border: 0;
+  display: block;
+  width: 90%;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  ${below.small`
+    padding-top: 3rem;
+  `}
+`;
+
+export const SubmitBtnWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2rem;
+`;
+
+// Text
+
+export const Title = styled.h3`
+  font-weight: 600;
   color: #4d4d4d;
-  font-size: 1.8em;
+  font-size: ${fontSize1x};
 `;
 
 export const Text = styled.p`

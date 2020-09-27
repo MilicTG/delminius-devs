@@ -73,3 +73,26 @@ export const homeObjSix = {
   backgroundPrimary: true,
   fontColor: false,
 };
+
+export const homeObjSeven = {
+  title: "Contact Us",
+  backgroundPrimary: false,
+  fontColor: true,
+};
+
+export const homeObjEight = {
+  lightBg: false,
+  primary: true,
+  imgStart: true,
+  lightTopLine: true,
+  lightTextDesc: true,
+  buttonLabel: "Contact Us",
+  description:
+    "In short, we are the kind of team who likes to focus on results, such as best user experience, engagement, user satisfaction, retention, and scalability.",
+  headline: "We've been living and breathing mobile since 2015.",
+  topLine: "Little about us",
+  lightText: true,
+  start: false,
+  alt: "Image",
+  src: require("../../assets/svgAboutUs.svg"),
+};
