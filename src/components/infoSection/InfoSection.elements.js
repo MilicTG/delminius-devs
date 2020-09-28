@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import {
   colorPrimary,
   colorSecondary,
@@ -80,6 +81,10 @@ export const Subtitle = styled.p`
   line-height: 2.4rem;
   color: ${({ lightTextDesc }) =>
     lightTextDesc ? colorWhite : colorFontPrimary};
+`;
+
+export const ButtonLink = styled(Link)`
+  display: ${({ buttonVisible }) => (buttonVisible ? "block" : "none")};
 `;
 
 export const ImageWrapper = styled.div`

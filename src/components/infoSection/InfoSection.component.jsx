@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Button } from "../../components";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
@@ -12,6 +11,7 @@ import {
   TopLine,
   Heading,
   Subtitle,
+  ButtonLink,
   ImageWrapper,
   Image,
 } from "./InfoSection.elements";
@@ -26,6 +26,7 @@ const InfoSection = ({
   topLine,
   headline,
   description,
+  buttonVisible,
   buttonLabel,
   start,
   src,
@@ -48,11 +49,11 @@ const InfoSection = ({
                   <Subtitle lightTextDesc={lightTextDesc}>
                     {description}
                   </Subtitle>
-                  <Link to="/">
+                  <ButtonLink to="/" buttonVisible={buttonVisible}>
                     <Button big fontBig primary={primary}>
                       {buttonLabel}
                     </Button>
-                  </Link>
+                  </ButtonLink>
                 </Fade>
               </TextWrapper>
             </InfoColumn>

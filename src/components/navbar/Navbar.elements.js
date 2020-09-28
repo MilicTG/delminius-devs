@@ -10,7 +10,7 @@ import {
   above,
   below,
 } from "../../styles";
-import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import logoSVG from "../../assets/logo-light.svg";
 
 export const NavbarWrapper = styled.nav`

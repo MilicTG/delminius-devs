@@ -40,21 +40,16 @@ const Navbar = () => {
               <NavbarNavigationLink to="/">Home</NavbarNavigationLink>
             </NavbarNavigationItem>
             <NavbarNavigationItem>
-              <NavbarNavigationLink
-                scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
-                to="/#section-services"
-              >
-                Services
-              </NavbarNavigationLink>
+              <NavbarNavigationLink to="/">Services</NavbarNavigationLink>
+            </NavbarNavigationItem>
+            <NavbarNavigationItem>
+              <NavbarNavigationLink to="/">Why native</NavbarNavigationLink>
             </NavbarNavigationItem>
             <NavbarNavigationItem>
               <NavbarNavigationLink to="/">Portfolio</NavbarNavigationLink>
             </NavbarNavigationItem>
             <NavbarNavigationItem>
               <NavbarNavigationLink to="/">Contact</NavbarNavigationLink>
-            </NavbarNavigationItem>
-            <NavbarNavigationItem>
-              <NavbarNavigationLink to="/">About Us</NavbarNavigationLink>
             </NavbarNavigationItem>
           </NavbarNavigationMenu>
         </NavbarContainer>
