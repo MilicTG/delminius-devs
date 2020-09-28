@@ -10,7 +10,7 @@ import {
   above,
   below,
 } from "../../styles";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import logoSVG from "../../assets/logo-light.svg";
 
 export const NavbarWrapper = styled.nav`
@@ -115,26 +115,4 @@ export const NavbarNavigationLink = styled(Link)`
     width: 100%;
     display: table;
   `};
-`;
-
-export const NavbarNavigationItemButton = styled.li`
-  ${below.med`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 12rem;
-`}
-`;
-
-export const NavigationButtonLink = styled(Link)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  padding: 0.8rem 1.6rem;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
 `;

@@ -4,6 +4,7 @@ import {
   colorWhite,
   colorFontPrimary,
   container,
+  fontSize1x,
   fontSize2x,
   fontSize0,
   cardShadow,
@@ -12,16 +13,29 @@ import {
 } from "../../styles";
 
 export const ServicesWrapper = styled.div`
-  padding: 7rem 0 12rem 0;
+  padding: 10rem 0;
   display: flex;
   justify-content: center;
   background: ${colorWhite};
+  ${above.large`
+    padding: 15rem 0;
+`}
 `;
 
 export const ServicesContainer = styled.div`
   ${container}
   display: flex;
   justify-content: center;
+  flex-flow: column;
+`;
+
+export const TopLine = styled.div`
+  color: ${colorFontPrimary};
+  font-size: ${fontSize0};
+  line-height: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  margin-bottom: 3.5rem;
 `;
 
 export const ServicesCardWrapper = styled.div`

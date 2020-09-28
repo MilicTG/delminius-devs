@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components";
 import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 import {
   InfoSectionWrapper,
   InfoSectionContainer,
@@ -37,20 +38,30 @@ const InfoSection = ({
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
               <TextWrapper>
-                <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Link to="/">
-                  <Button big fontBig primary={primary}>
-                    {buttonLabel}
-                  </Button>
-                </Link>
+                <Fade
+                  left={imgStart ? false : true}
+                  right={imgStart ? true : false}
+                  cascade
+                >
+                  <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
+                  <Heading lightText={lightText}>{headline}</Heading>
+                  <Subtitle lightTextDesc={lightTextDesc}>
+                    {description}
+                  </Subtitle>
+                  <Link to="/">
+                    <Button big fontBig primary={primary}>
+                      {buttonLabel}
+                    </Button>
+                  </Link>
+                </Fade>
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
-              <ImageWrapper start={start}>
-                <Image src={src} alt={alt} />
-              </ImageWrapper>
+              <Zoom>
+                <ImageWrapper start={start}>
+                  <Image src={src} alt={alt} />
+                </ImageWrapper>
+              </Zoom>
             </InfoColumn>
           </InfoRow>
         </InfoSectionContainer>

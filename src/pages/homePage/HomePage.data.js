@@ -16,12 +16,6 @@ export const homeObjectOne = {
 };
 
 export const homeObjTwo = {
-  title: "Our Services",
-  backgroundPrimary: false,
-  fontColor: true,
-};
-
-export const homeObjThree = {
   cardTitleOne: "Android app development",
   cardTitleTwo: "Modern UI/UX design",
   cardTitleThree: "Launch and maintenance",
@@ -34,7 +28,7 @@ export const homeObjThree = {
     " In the modern world having just a website is not enough. We pride ourselves to deliver high quality android apps, based on modern and stable architecture.",
 };
 
-export const homeObjFour = {
+export const homeObjThree = {
   lightBg: false,
   primary: true,
   imgStart: true,
@@ -51,7 +45,7 @@ export const homeObjFour = {
   src: require("../../assets/svgAndroidDev.svg"),
 };
 
-export const homeObjFive = {
+export const homeObjFour = {
   lightBg: true,
   primary: false,
   imgStart: false,
@@ -68,25 +62,13 @@ export const homeObjFive = {
   src: require("../../assets/svgWhyNative.svg"),
 };
 
-export const homeObjSix = {
-  title: "Our Work",
-  backgroundPrimary: true,
-  fontColor: false,
-};
-
-export const homeObjSeven = {
-  title: "Contact Us",
-  backgroundPrimary: false,
-  fontColor: true,
-};
-
-export const homeObjEight = {
+export const homeObjFive = {
   lightBg: false,
   primary: true,
   imgStart: true,
   lightTopLine: true,
   lightTextDesc: true,
-  buttonLabel: "Contact Us",
+  buttonLabel: "Find out more",
   description:
     "In short, we are the kind of team who likes to focus on results, such as best user experience, engagement, user satisfaction, retention, and scalability.",
   headline: "We've been living and breathing mobile since 2015.",

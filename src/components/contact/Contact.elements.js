@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {
   colorPrimary,
-  colorSecondary,
+  colorFontPrimary,
   colorWhite,
   container,
   blackShadow,
@@ -14,6 +14,9 @@ import {
 
 export const ContactWrapper = styled.section`
   padding: 10rem 0;
+  ${above.large`
+    padding: 15rem 0;
+`}
 `;
 export const ContactContainer = styled.div`
   ${container}
@@ -84,10 +87,13 @@ export const SubmitBtnWrapper = styled.div`
 
 // Text
 
-export const Title = styled.h3`
-  font-weight: 600;
-  color: #4d4d4d;
-  font-size: ${fontSize1x};
+export const TopLine = styled.div`
+  color: ${colorFontPrimary};
+  font-size: ${fontSize0};
+  line-height: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  margin-bottom: 3.5rem;
 `;
 
 export const Text = styled.p`

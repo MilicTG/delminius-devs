@@ -7,6 +7,7 @@ import {
   container,
   fontSize4x,
   fontSize0,
+  above,
   below,
 } from "../../styles";
 
@@ -14,6 +15,9 @@ export const InfoSectionWrapper = styled.div`
   color: ${colorWhite};
   padding: 10rem 0;
   background: ${({ lightBg }) => (lightBg ? colorWhite : colorPrimary)};
+  ${above.large`
+    padding: 15rem 0;
+`}
 `;
 
 export const InfoSectionContainer = styled.div`

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   NavbarWrapper,
   NavbarContainer,
@@ -8,33 +8,17 @@ import {
   NavbarNavigationMenu,
   NavbarNavigationItem,
   NavbarNavigationLink,
-  NavbarNavigationItemButton,
-  NavigationButtonLink,
 } from "./Navbar.elements";
+import smoothscroll from "smoothscroll-polyfill";
 import { Sling as NavbarHamburgerMenu } from "hamburger-react";
-import Button from "../button/Button.component";
+
+// kick off the polyfill!
+smoothscroll.polyfill();
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
-
-  const closeMobileMenu = () => {};
-
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener("resize", showButton);
 
   return (
     <>
@@ -56,7 +40,12 @@ const Navbar = () => {
               <NavbarNavigationLink to="/">Home</NavbarNavigationLink>
             </NavbarNavigationItem>
             <NavbarNavigationItem>
-              <NavbarNavigationLink to="/">Services</NavbarNavigationLink>
+              <NavbarNavigationLink
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth" })}
+                to="/#section-services"
+              >
+                Services
+              </NavbarNavigationLink>
             </NavbarNavigationItem>
             <NavbarNavigationItem>
               <NavbarNavigationLink to="/">Portfolio</NavbarNavigationLink>

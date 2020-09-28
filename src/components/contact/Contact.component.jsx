@@ -1,5 +1,7 @@
 import React from "react";
 import ContactImage from "../../assets/svgContact.svg";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 import {
   ContactWrapper,
@@ -7,7 +9,7 @@ import {
   ContactFormsContainer,
   SubmitBtnWrapper,
   Image,
-  Title,
+  TopLine,
   Form,
   Input,
   TextArea,
@@ -20,21 +22,25 @@ const Contact = () => {
     <ContactWrapper>
       <ContactContainer>
         <ContactFormsContainer>
-          <Title>Fell free to write us</Title>
-          <Form>
-            <Input type="name" name="name" placeholder="Name" />
-            <Input type="text" name="email" placeholder="Email" />
-            <TextArea
-              type="text"
-              name="subject"
-              placeholder="Write something.."
-            />
-            <SubmitBtnWrapper>
-              <Button type="submit">Submit</Button>
-            </SubmitBtnWrapper>
-          </Form>
+          <Fade left>
+            <TopLine>Fell free to write us</TopLine>
+            <Form>
+              <Input type="name" name="name" placeholder="Name" />
+              <Input type="text" name="email" placeholder="Email" />
+              <TextArea
+                type="text"
+                name="subject"
+                placeholder="Write something.."
+              />
+              <SubmitBtnWrapper>
+                <Button type="submit">Submit</Button>
+              </SubmitBtnWrapper>
+            </Form>
+          </Fade>
         </ContactFormsContainer>
-        <Image src={ContactImage} />
+        <Zoom>
+          <Image src={ContactImage} />
+        </Zoom>
       </ContactContainer>
     </ContactWrapper>
   );

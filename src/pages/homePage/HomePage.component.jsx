@@ -5,31 +5,19 @@ import {
   homeObjThree,
   homeObjFour,
   homeObjFive,
-  homeObjSix,
-  homeObjSeven,
-  homeObjEight,
 } from "./HomePage.data";
-import {
-  InfoSection,
-  Titlebar,
-  Services,
-  Portfolio,
-  Contact,
-} from "../../components";
+import { InfoSection, Services, Portfolio, Contact } from "../../components";
 
 const HomePage = () => {
   return (
     <>
-      <InfoSection {...homeObjectOne} />
-      <Titlebar {...homeObjTwo} />
-      <Services {...homeObjThree} />
+      <InfoSection {...homeObjectOne} id="section-head" />
+      <Services {...homeObjTwo} id="section-services" />
+      <InfoSection {...homeObjThree} />
       <InfoSection {...homeObjFour} />
-      <InfoSection {...homeObjFive} />
-      <Titlebar {...homeObjSix} />
-      <Portfolio />
-      <Titlebar {...homeObjSeven} />
-      <Contact />
-      <InfoSection {...homeObjEight} />
+      <Portfolio id="section-portfolio" />
+      <Contact id="section-contact" />
+      <InfoSection {...homeObjFive} id="section-about-us" />
     </>
   );
 };
