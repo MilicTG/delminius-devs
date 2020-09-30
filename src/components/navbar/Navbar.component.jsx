@@ -43,9 +43,6 @@ const Navbar = () => {
               <NavbarNavigationLink to="/">Services</NavbarNavigationLink>
             </NavbarNavigationItem>
             <NavbarNavigationItem>
-              <NavbarNavigationLink to="/">Why native</NavbarNavigationLink>
-            </NavbarNavigationItem>
-            <NavbarNavigationItem>
               <NavbarNavigationLink to="/">Portfolio</NavbarNavigationLink>
             </NavbarNavigationItem>
             <NavbarNavigationItem>

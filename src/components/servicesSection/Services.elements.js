@@ -4,22 +4,19 @@ import {
   colorWhite,
   colorFontPrimary,
   container,
-  fontSize1x,
   fontSize2x,
   fontSize0,
-  cardShadow,
-  cardShadowHover,
   above,
 } from "../../styles";
 
 export const ServicesWrapper = styled.div`
-  padding: 10rem 0;
+  padding: 5rem 0;
   display: flex;
   justify-content: center;
   background: ${colorWhite};
   ${above.large`
-    padding: 15rem 0;
-`}
+    padding: 10rem 0 3rem 0;
+  `}
 `;
 
 export const ServicesContainer = styled.div`
@@ -49,21 +46,14 @@ export const ServicesCardWrapper = styled.div`
 `;
 
 export const CardContainer = styled.div`
-  border-radius: 10px;
-  padding: 5rem 2rem;
-  min-height: 40rem;
-  ${cardShadow}
-  &:hover {
-    transition: all 0.3s ease-out;
-    ${cardShadowHover}
-  }
+  padding: 3rem 1rem;
 `;
 
 export const CardIconHolder = styled.div`
   padding: 0;
   margin: 0 auto;
-  width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
   color: ${colorPrimary};
   svg {
     padding: 0;

@@ -51,7 +51,7 @@ export const homeObjectThree = {
   src: require("../../assets/svgDelminiusDevsTech.svg"),
 };
 
-export const homeObjTwoOld = {
+export const homeObjectFour = {
   cardTitleOne: "Android app development",
   cardTitleTwo: "Modern UI/UX design",
   cardTitleThree: "Launch and maintenance",

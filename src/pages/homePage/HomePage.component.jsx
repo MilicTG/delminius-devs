@@ -3,18 +3,20 @@ import {
   homeObjectOne,
   homeObjectTwo,
   homeObjectThree,
-  homeObjFour,
+  homeObjectFour,
   homeObjFive,
 } from "./HomePage.data";
-import { InfoSection, Portfolio, Contact } from "../../components";
+import { InfoSection, Services, TheTeam, Contact } from "../../components";
 
 const HomePage = () => {
   return (
     <>
       <InfoSection {...homeObjectOne} />
+      <Services {...homeObjectFour} />
       <InfoSection {...homeObjectTwo} />
       <InfoSection {...homeObjectThree} />
-      <Contact/>
+      <TheTeam />
+      <Contact />
     </>
   );
 };

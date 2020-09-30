@@ -57,7 +57,7 @@ export const NavbarHamburgerMenuWrapper = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
-  ${above.large`
+  ${above.big`
     display: none;
   `}
 `;
@@ -69,7 +69,7 @@ export const NavbarNavigationMenu = styled.ul`
   text-align: center;
   margin: 0;
   padding: 0;
-  ${below.med`
+  ${below.big`
     display: flex;
     flex-direction:column;
     width: 100%;

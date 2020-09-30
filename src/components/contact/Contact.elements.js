@@ -24,7 +24,7 @@ export const ContactContainer = styled.div`
   justify-content: center;
   flex-flow: row;
   align-items: center;
-  ${below.small`
+  ${below.med`
     flex-flow: column;
   `}
 `;
@@ -73,7 +73,7 @@ export const Image = styled.img`
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
-  ${below.small`
+  ${below.med`
     padding-top: 3rem;
   `}
 `;

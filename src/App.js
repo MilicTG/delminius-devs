@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { GlobalStyle } from "./styles";
-import { Navbar } from "./components";
+import { Navbar, Footer } from "./components";
 import HomePage from "./pages/homePage/HomePage.component";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
       <Switch>
         <Route component={HomePage} />
       </Switch>
+      <Footer />
     </Router>
   );
 }

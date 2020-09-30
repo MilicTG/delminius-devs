@@ -2,7 +2,7 @@ import React from "react";
 import { Android } from "@styled-icons/fa-brands/Android";
 import { Pen } from "@styled-icons/boxicons-solid/Pen";
 import { GearFill } from "@styled-icons/bootstrap/GearFill";
-import Pulse from "react-reveal/Pulse";
+import Fade from "react-reveal/Fade";
 
 import {
   ServicesWrapper,
@@ -27,9 +27,11 @@ const Services = ({
     <>
       <ServicesWrapper>
         <ServicesContainer>
-          <TopLine>Our Services</TopLine>
+          <Fade left>
+            <TopLine>Our Services</TopLine>
+          </Fade>
           <ServicesCardWrapper>
-            <Pulse bottom cascade>
+            <Fade bottom cascade>
               <CardContainer>
                 <CardIconHolder>
                   <Android />
@@ -53,7 +55,7 @@ const Services = ({
                 <CardTitle>{cardTitleThree}</CardTitle>
                 <CardText>{cardTextThree}</CardText>
               </CardContainer>
-            </Pulse>
+            </Fade>
           </ServicesCardWrapper>
         </ServicesContainer>
       </ServicesWrapper>
