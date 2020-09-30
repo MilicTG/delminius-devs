@@ -28,7 +28,7 @@ const Services = ({
       <ServicesWrapper>
         <ServicesContainer>
           <Fade left>
-            <TopLine>Our Services</TopLine>
+            <TopLine>Some of our services</TopLine>
           </Fade>
           <ServicesCardWrapper>
             <Fade bottom cascade>

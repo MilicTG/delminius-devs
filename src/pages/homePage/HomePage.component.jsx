@@ -4,7 +4,6 @@ import {
   homeObjectTwo,
   homeObjectThree,
   homeObjectFour,
-  homeObjFive,
 } from "./HomePage.data";
 import { InfoSection, Services, TheTeam, Contact } from "../../components";
 
