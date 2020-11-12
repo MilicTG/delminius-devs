@@ -37,7 +37,7 @@ export const TopLine = styled.div`
 
 export const ServicesCardWrapper = styled.div`
   display: grid;
-  column-gap: 2rem;
+  column-gap: 3rem;
   row-gap: 2rem;
   grid-template-columns: 1fr;
   ${above.med`
@@ -52,8 +52,8 @@ export const CardContainer = styled.div`
 export const CardIconHolder = styled.div`
   padding: 0;
   margin: 0 auto;
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   color: ${colorPrimary};
   svg {
     padding: 0;
@@ -68,5 +68,6 @@ export const CardTitle = styled.h3`
 
 export const CardText = styled.p`
   font-size: ${fontSize0};
+  letter-spacing: 1.3px;
   color: ${colorFontPrimary};
 `;
